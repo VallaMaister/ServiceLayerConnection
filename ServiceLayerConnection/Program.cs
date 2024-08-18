@@ -21,11 +21,9 @@ try
     // Muestra la respuesta de la solicitud de inicio de sesión en la consola.
     Console.WriteLine("Respuesta: " + loginResult);
 
-    // Espera a que el usuario presione una tecla antes de continuar.
-    Console.ReadKey();
 
     // Realiza la solicitud para obtener los socios de negocio.
-    Task<HttpResponseMessage> httpResponseItems = serviceLayer.CreateItem("Prueba222","Prueba 222",true,false,true);
+    Task<HttpResponseMessage> httpResponseItems = serviceLayer.CreateBP("V12","Prueba ", "XAXX010101000");
     Console.WriteLine("Ejecutando Solicitud...");
 
     // Espera la respuesta de la solicitud para obtener socios de negocio y obtiene el contenido en formato de cadena.
