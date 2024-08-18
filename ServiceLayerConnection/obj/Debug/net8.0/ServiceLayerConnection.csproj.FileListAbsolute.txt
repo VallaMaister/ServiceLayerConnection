@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\bin\Debug\net8.0\ServiceLayerConnection.exe
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\bin\Debug\net8.0\ServiceLayerConnection.deps.json
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\bin\Debug\net8.0\ServiceLayerConnection.runtimeconfig.json
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\bin\Debug\net8.0\ServiceLayerConnection.dll
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\bin\Debug\net8.0\ServiceLayerConnection.pdb
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ServiceLayerConnection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ServiceLayerConnection.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ServiceLayerConnection.AssemblyInfo.cs
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ServiceLayerConnection.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ServiceLayerConnection.dll
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\refint\ServiceLayerConnection.dll
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ServiceLayerConnection.pdb
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ServiceLayerConnection.genruntimeconfig.cache
+C:\Users\User\source\repos\ServiceLayerConnection\ServiceLayerConnection\obj\Debug\net8.0\ref\ServiceLayerConnection.dll
