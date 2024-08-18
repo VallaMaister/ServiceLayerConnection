@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj": {}
+    "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj": {
+    "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj",
+        "projectUniqueName": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj",
         "projectName": "ServiceLayerConnection",
-        "projectPath": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj",
+        "projectPath": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\ServiceLayerConnection.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\obj\\",
+        "outputPath": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

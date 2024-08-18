@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\",
+  "WorkspaceRootPath": "C:\\Desarrollo\\ServiceLayerConnection\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|c:\\users\\user\\source\\repos\\servicelayerconnection\\servicelayerconnection\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|c:\\desarrollo\\servicelayerconnection\\servicelayerconnection\\class\\servicelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|solutionrelative:servicelayerconnection\\class\\servicelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|c:\\desarrollo\\servicelayerconnection\\servicelayerconnection\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|solutionrelative:servicelayerconnection\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|c:\\users\\user\\source\\repos\\servicelayerconnection\\servicelayerconnection\\class\\servicelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|solutionrelative:servicelayerconnection\\class\\servicelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|c:\\desarrollo\\servicelayerconnection\\servicelayerconnection\\model\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8317CFF5-0E26-400F-AE64-D8F95071A9AD}|ServiceLayerConnection\\ServiceLayerConnection.csproj|solutionrelative:servicelayerconnection\\model\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,28 +26,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServiceLayer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\Class\\ServiceLayer.cs",
-              "RelativeDocumentMoniker": "ServiceLayerConnection\\Class\\ServiceLayer.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\Class\\ServiceLayer.cs",
-              "RelativeToolTip": "ServiceLayerConnection\\Class\\ServiceLayer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAABrAAAA",
+              "DocumentIndex": 2,
+              "Title": "Items.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\Model\\Items.cs",
+              "RelativeDocumentMoniker": "ServiceLayerConnection\\Model\\Items.cs",
+              "ToolTip": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\Model\\Items.cs",
+              "RelativeToolTip": "ServiceLayerConnection\\Model\\Items.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T18:05:42.347Z",
+              "WhenOpened": "2024-08-18T18:48:31.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\Program.cs",
-              "RelativeDocumentMoniker": "ServiceLayerConnection\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\ServiceLayerConnection\\ServiceLayerConnection\\Program.cs",
-              "RelativeToolTip": "ServiceLayerConnection\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
+              "Title": "ServiceLayer.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\Class\\ServiceLayer.cs",
+              "RelativeDocumentMoniker": "ServiceLayerConnection\\Class\\ServiceLayer.cs",
+              "ToolTip": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\Class\\ServiceLayer.cs",
+              "RelativeToolTip": "ServiceLayerConnection\\Class\\ServiceLayer.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwD4AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T18:02:06.571Z",
+              "WhenOpened": "2024-08-18T18:48:05.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\Program.cs",
+              "RelativeDocumentMoniker": "ServiceLayerConnection\\Program.cs",
+              "ToolTip": "C:\\Desarrollo\\ServiceLayerConnection\\ServiceLayerConnection\\Program.cs",
+              "RelativeToolTip": "ServiceLayerConnection\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T18:46:40.047Z",
               "EditorCaption": ""
             }
           ]

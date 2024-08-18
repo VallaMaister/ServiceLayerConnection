@@ -8,48 +8,81 @@ using System.Threading.Tasks;
 
 namespace ServiceLayerConnection.Class
 {
+    // Clase que maneja la conexión y solicitudes al Service Layer de SAP Business One.
     public class ServiceLayer
     {
+        // HttpClient para manejar las solicitudes HTTP.
         public HttpClient HttpClient;
 
-        public ServiceLayer() 
-        { 
+        // Constructor de la clase ServiceLayer.
+        public ServiceLayer()
+        {
+            // Configura el manejador de HttpClient para omitir la validación de certificados SSL.
             HttpClientHandler httpClientHandler = new HttpClientHandler();
-
             httpClientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
+            // Inicializa HttpClient con el manejador configurado.
             HttpClient = new HttpClient(httpClientHandler);
-            HttpClient.BaseAddress = new Uri("https://GDLOVALLADARE:50000/");
-            HttpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+            HttpClient.BaseAddress = new Uri("https://GDLOVALLADARE:50000/"); // Establece la dirección base para las solicitudes.
+            HttpClient.DefaultRequestHeaders.Add("Accept", "application/json"); // Añade el encabezado para aceptar respuestas en formato JSON.
         }
 
+        // Método asincrónico para iniciar sesión en el Service Layer.
         public async Task<HttpResponseMessage> Login()
         {
-            Login loginData = new() { UserName = "manager", Password = "Sapb1234", CompanyDB = "SBO_PRUEBAS" };            
-            string json = JsonSerializer.Serialize(loginData);
-            HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await HttpClient.PostAsync("b1s/v2/Login", content);
-            return response;
-
+            // Crea un objeto con las credenciales de inicio de sesión.
+            Login loginData = new() { UserName = "manager", Password = "Sapb1234", CompanyDB = "SBO_PRUEBAS" };
+            string json = JsonSerializer.Serialize(loginData); // Serializa el objeto de credenciales a JSON.
+            HttpContent content = new StringContent(json, Encoding.UTF8, "application/json"); // Prepara el contenido de la solicitud.
+            HttpResponseMessage response = await HttpClient.PostAsync("b1s/v2/Login", content); // Envía la solicitud POST para iniciar sesión.
+            return response; // Retorna la respuesta del servidor.
         }
 
+        // Método asincrónico para obtener la lista de artículos.
         public async Task<HttpResponseMessage> getItems()
         {
-            HttpResponseMessage response = await HttpClient.GetAsync("b1s/v2/Items");
-            return response;
-
+            HttpResponseMessage response = await HttpClient.GetAsync("b1s/v2/Items"); // Envía una solicitud GET para obtener los artículos.
+            return response; // Retorna la respuesta del servidor.
         }
 
+        // Método asincrónico para obtener los acuerdos globales.
         public async Task<HttpResponseMessage> getAcuerdosGlobales()
         {
-            HttpResponseMessage response = await HttpClient.GetAsync("b1s/v2/BlanketAgreements");
+            HttpResponseMessage response = await HttpClient.GetAsync("b1s/v2/BlanketAgreements"); // Envía una solicitud GET para obtener los acuerdos globales.
+            return response; // Retorna la respuesta del servidor.
+        }
+
+        // Método asincrónico para obtener la lista de socios de negocio.
+        public async Task<HttpResponseMessage> getSN()
+        {
+            HttpResponseMessage response = await HttpClient.GetAsync("b1s/v2/BusinessPartners"); // Envía una solicitud GET para obtener los socios de negocio.
+            return response; // Retorna la respuesta del servidor.
+        }
+
+
+        //Crear articulos
+        public async Task<HttpResponseMessage> CreateItem(string itemCode, string itemName, bool salesItem, bool inventoryItem,bool purchanseItem)
+        {
+            Items item = new() { 
+                ItemCode= itemCode, 
+                ItemName = itemName,
+                SalesItem = salesItem? "tYES" : "tNO",
+                InventoryItem=inventoryItem ? "tYES" : "tNO",
+                PurchaseItem = purchanseItem ? "tYES" : "tNO"
+            };
+
+            // Serializa el objeto a JSON.
+            string json = JsonSerializer.Serialize(item);
+
+            // Prepara el contenido de la solicitud HTTP.
+            HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            // Envía la solicitud POST al endpoint de creación de artículos en el Service Layer.
+            HttpResponseMessage response = await HttpClient.PostAsync("b1s/v2/Items", content);
+
+            // Retorna la respuesta del servidor.
             return response;
         }
 
-        public async Task<HttpResponseMessage> getSN()
-        {
-            HttpResponseMessage response = await HttpClient.GetAsync("b1s/v2/BusinessPartners");
-            return response;
-        }
     }
 }
